@@ -1,0 +1,424 @@
+% cribbed from http://petemills.blogspot.com/2013/09/latex-airplane-checklist.html
+\documentclass[8pt]{article}
+\usepackage{multicol}
+\usepackage{multienum}
+\usepackage{comment}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{extsizes}
+
+\usepackage[scaled]{helvet}
+\renewcommand\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+
+\geometry{letterpaper,paperwidth=5in,paperheight=8in,top=.5in,left=.5in,right=.5in,bottom=.5in}
+
+
+% Turn off header and footer
+\pagestyle{empty}
+
+\singlespacing
+ 
+
+% Redefine section commands to use less space
+\makeatletter
+\renewcommand{\section}{\@startsection{section}{1}{0mm}%
+                                {-1ex plus -.5ex minus -.2ex}%
+                                {0.5ex plus .2ex}%x
+                                {\normalfont\large\bfseries}}
+\renewcommand{\subsection}{\@startsection{subsection}{2}{0mm}%
+                                {-1explus -.5ex minus -.2ex}%
+                                {0.5ex plus .2ex}%
+                                {\normalfont\normalsize\bfseries}}
+\renewcommand{\subsubsection}{\@startsection{subsubsection}{3}{0mm}%
+                                {-1ex plus -.5ex minus -.2ex}%
+                                {1ex plus .2ex}%
+                                {\normalfont\small\bfseries}}
+\makeatother
+
+
+% Don't print section numbers
+\setcounter{secnumdepth}{0}
+
+\newenvironment{enumerate*}%
+               {\begin{enumerate}%
+                   \setlength{\itemsep}{0pt}%
+                   \setlength{\parskip}{0pt}}%
+               {\end{enumerate}}
+
+
+
+% -----------------------------------------------------------------------
+
+\begin{document}
+
+\raggedright
+\footnotesize
+\begin{multicols}{2}
+
+
+% multicol parameters
+% These lengths are set only within the two main columns
+%\setlength{\columnseprule}{0.25pt}
+\setlength{\premulticols}{1pt}
+\setlength{\postmulticols}{1pt}
+\setlength{\multicolsep}{1pt}
+\setlength{\columnsep}{2pt}
+\setlength{\itemsep}{0em}
+
+
+% -----------------------------------------------------------------------
+
+% Page title
+\begin{center}
+     \Large{\textbf{PA28-140 Checklist}} \\
+     \Large{\textbf{N56591}}\\
+\end{center}
+
+\newlength{\len}
+
+% begin new section
+\subsection{V - Speeds in Miles Per Hour ( MPH )}
+
+%this is a four column tabular section
+\begin{tabular}{l l l l}
+
+	V$_{\mathrm{s_0}}$ = 55	&	V$_{\mathrm{s}}$ = V$_{\mathrm{s_1}}$ = 64	&	V$_{\mathrm{x}}$ = 78	&	V$_{\mathrm{y}}$ = 89\\	
+	V$_{\mathrm{fe}}$ = 115	&	V$_{\mathrm{no}}$ = 140	&	V$_{\mathrm{a}}$ = 125 	&	V$_{\mathrm{ne}}$ = 171	\\	
+	
+\end{tabular}
+
+Best Glide Speed = 80 MPH
+
+
+
+\subsection{Before Starting Engine}
+
+\begin{enumerate*}
+  \setlength{\itemsep}{0em}
+
+		\item Preflight Inspection - \textbf{COMPLETE}	
+		\item Seats, Seatbels \& Shoulder Harness - \textbf{ADJUST and LOCK}
+		\item Fuel Selector Valve - \textbf{ON FULLEST TANK}
+		\item Avionics Power - \textbf{OFF}
+		\item Electrical Equipment - \textbf{OFF}
+		\item Brakes - \textbf{TEST and SET}
+		\item Flaps - \textbf{RETRACTED}
+		\item Circuit Breakers - \textbf{CHECK}
+
+	\end{enumerate*}
+
+
+
+
+\subsection{Starting Engine - Normal}
+
+	\begin{enumerate*}
+	
+		\item Carburetor Heat - \textbf{OFF}
+		\item Mixture - \textbf{FULL RICH}
+		\item Throttle - \textbf{OPEN $\frac{1}{2}$"}
+		\item Prime - \textbf{AS REQUIRED.  Skip when engine is hot.}
+		\item Master - \textbf{ON}
+		\item Rotating Beacon - \textbf{ON}
+		\item Fuel Pump - \textbf{ON}
+		\item Starter - \textbf{ENGAGE}
+		\item Throttle - \textbf{1000 RPM WARM UP}
+		\item Oil Pressure - \textbf{CHECK}
+		\item Fuel Pump - \textbf{OFF}
+		
+	\end{enumerate*}
+
+
+
+	
+\subsection{After Starting}
+
+	\begin{enumerate*}
+	
+		\item Lights - \textbf{AS REQUIRED}
+		\item Radios - \textbf{SET}
+		\item Transponder - \textbf{STANDBY, 1200}
+		\item Directional Gyro - \textbf{SET}
+		\item Mixture - \textbf{LEAN FOR TAXI}
+		\item Parking Brake - \textbf{RELEASE}
+		\item Brakes \& Steering - \textbf{CHECK}
+				
+	\end{enumerate*}
+	
+	
+	
+	
+\subsection{Before Takeoff - Run-Up}
+
+	\begin{enumerate*}
+	
+		\item Cabin Doors and Windows - \textbf{CLOSED \& LOCKED}
+		\item Parking Brake - \textbf{SET}
+		\item Flight Controls - \textbf{FREE \& CORRECT}
+		\item Flight Instruments - \textbf{SET}
+		\item Fuel Selector Valve - \textbf{ON - FULLEST TANK}
+		\item Elevator Trim - \textbf{TAKEOFF}
+		\item Mixture - \textbf{RICH or AS REQUIRED}
+		\item Throttle - \textbf{2000 RPM}
+			\begin{enumerate*}
+				\item Magnetos - \textbf{CHECK}
+				\item Carburetor Heat - \textbf{CHECK}
+				\item Engine Instruments \& Ammeter - \textbf{CHECK}
+				\item Suction Gauge - \textbf{CHECK: 5 InHg$ \pm $0.1}
+			\end{enumerate*}
+		\item Throttle - \textbf{IDLE, THEN 1000 RPM}
+		\item Radios - \textbf{SET}
+		\item Transponder - \textbf{SET, THEN ALTITUDE}
+		\item Throttle Friction Lock - \textbf{ADJUST}
+		\item Fuel Pump - \textbf{ON}
+		\item Lights - \textbf{AS REQUIRED}
+		\item Parking Brake - \textbf{RELEASE}
+	
+	\end{enumerate*}
+	
+	
+	
+\subsection{M.P.S.P.I.T.}
+
+	% multi enumerate will enumerate within a table
+	\begin{multienumerate}
+	
+		\mitemxxx{MIXTURE}{PROP}{SEATS, SEATBELTS, SWITCHES, STACKS}
+		\mitemxxx{PITOT HEAT}{INSTRUMENTS}{TRANSPONDER, TRIM, TIME}
+	
+	\end{multienumerate}
+	
+	
+	
+	
+\subsection{Takeoff - Normal}
+
+	\begin{enumerate*}
+	
+		\item Flaps - \textbf{0-10$^{\circ}$}
+		\item Power - \textbf{FULL THROTTLE}
+		\item Elevator Control - \textbf{ROTATE AT 55 MPH}
+		\item Climb Speed - \textbf{V$_{\mathrm{y}}$, 89 MPH}
+		\item Flaps - \textbf{RETRACT}
+		
+	\end{enumerate*}
+	
+	
+	
+	
+\subsection{Takeoff - Short Field}
+
+	\begin{enumerate*}
+	
+		\item Flaps - \textbf{25$^{\circ}$}
+		\item Power - \textbf{FULL THROTTLE}
+		\item Elevator Control - \textbf{ROTATE AT 47-56 MPH}
+		\item Climb Speed - \textbf{V$_{\mathrm{x}}$ 78 MPH, CLIMB OVER OBSTACLE}
+		\item Climb Speed - \textbf{V$_{\mathrm{y}}$ 89 MPH}
+		\item Flaps - \textbf{POSITIVE RATE, RETRACT}
+		
+	\end{enumerate*}
+	
+	
+	
+	
+\subsection{En Route Climb ( 500' - 1,000' AGL )}
+
+	\begin{enumerate*}
+	
+		\item Airspeed - \textbf{100 MPH}
+		\item Mixture - \textbf{FULL RICH ( BELOW 3000' MSL )}
+		\item Fuel Pump - \textbf{OFF}
+	
+	\end{enumerate*}
+	
+	
+	
+	
+\subsection{Cruise}
+
+	\begin{enumerate*}
+	
+		\item Power - \textbf{SET}
+		\item Elevator and Rudder Trim - \textbf{ADJUST}
+		\item Mixture - \textbf{Lean ( ABOVE 3000' MSL )}
+		\item Engine Instruments - \textbf{CHECK}
+		\item Landing Light - \textbf{OFF}
+	
+	\end{enumerate*}
+	
+	
+	
+	
+\subsection{Descent}
+
+	\begin{enumerate*}
+	
+		\item Power - \textbf{SET}
+		\item Mixture - \textbf{ENRICHEN AS REQUIRED}
+		\item Landing Light - \textbf{OFF}
+	
+	\end{enumerate*}
+	
+	
+	
+	
+\subsection{Before Landing}
+
+	\begin{enumerate*}
+	
+		\item Seats, Belts \& Shoulder Harness - \textbf{ADJUST and LOCK}
+		\item Fuel Selector Valve - \textbf{FULLEST TANK}
+		\item Mixture - \textbf{FULL RICH ( BELOW 3000' MSL )}
+		\item Fuel Pump - \textbf{ON}
+	
+	\end{enumerate*}
+	
+	
+	
+	
+\subsection{Landing - Normal}
+
+	\begin{enumerate*}
+		
+		\item Airspeed - \textbf{85 MPH}
+		\item Flaps - \textbf{AS DESIRED ( BELOW V$_{\mathrm{fe}}$ )}
+		\item Airspeed - \textbf{76 MPH WITH 40$^\circ$ FLAPS}
+		
+	\end{enumerate*}
+	
+	
+	
+	
+\subsection{Landing - Short Field}
+
+	\begin{enumerate*}
+	
+		\item Airspeed - \textbf{85 MPH}
+		\item Flaps - \textbf{40$^\circ$ ( BELOW V$_fe$ )}
+		\item Airspeed - \textbf{66 MPH}
+		\item Elevator Trim - \textbf{ADJUST}
+		\item Power - \textbf{REDUCE TO IDLE AFTER CLEARING OBSTACLE}
+		\item Touchdown - \textbf{MAIN GEAR FIRST}
+		\item Brakes - \textbf{HARD BRAKING}
+		\item Flaps - \textbf{RETRACT TO AID BRAKING}
+	
+	\end{enumerate*}
+	
+	
+	
+	
+\subsection{After Landing}
+
+	\begin{enumerate*}
+	
+		\item Flaps - \textbf{RETRACT}
+		\item Fuel Pump - \textbf{OFF}
+		\item Transponder - \textbf{STANDBY}
+		\item Lights - \textbf{AS REQUIRED}
+		\item Mixture - \textbf{LEAN FOR TAXI}
+	
+	\end{enumerate*}
+	
+	
+	
+	
+\subsection{Securing Airplane}
+
+	\begin{enumerate*}
+	
+		\item Parking Brake - \textbf{SET}
+		\item Throttle - \textbf{1000 RPM}
+		\item Avionics Power - \textbf{OFF}
+		\item Electrical Equipment - \textbf{ OFF ( EXCEPT BEACON )}
+		\item Mixture - \textbf{IDLE CUTOFF}
+		\item Beacon - \textbf{OFF}
+		\item Ignition Switch - \textbf{OFF}
+		\item Master Switch - \textbf{OFF}
+		\item Control Lock - \textbf{INSTALL}
+	
+	\end{enumerate*}
+	
+	
+	
+	
+\section{EMERGENCY PROCEDURES}	
+
+\subsection{Engine Failure During Takeoff}
+
+	\begin{enumerate*}
+		
+		\item Airspeed - \textbf{BEST GLIDE: 80 MPH}
+		\item Fuel Selector Valve - \textbf{OFF}
+		\item Fuel Pump - \textbf{OFF}
+		\item Mixture - \textbf{IDLE CUTOFF}
+		
+	\end{enumerate*}
+	
+	
+	
+	
+\subsection{Engine Failure During Flight}
+
+	\begin{enumerate*}
+	
+		\item Airspeed - \textbf{BEST GLIDE - 80 MPH}
+		\item Fuel Selector - \textbf{SWITCH TANKS}
+		\item Magnetos - \textbf{BOTH}
+		\item Fuel Pump - \textbf{ON}
+		\item Carburetor Heat - \textbf{ON}
+		\item Mixture - \textbf{FULL RICH}
+		\item Thrittle - {FULL THROTTLE}
+		\item Engine Gauges - \textbf{CHECK}
+	
+	\end{enumerate*}
+
+
+
+\subsection{Forced Landings Without Engine Power}
+
+	\begin{enumerate*}
+	
+		\item Airspeed - \textbf{BEST GLIDE - 80 MPH}
+		\item Mixture - \textbf{IDLE CUTOFF}
+		\item Fuel Selector - \textbf{OFF}
+		\item Magnetos - \textbf{OFF}
+		\item Flaps - \textbf{AS REQUIRED}
+		\item Doors - \textbf{OPEN BEFORE TOUCHDOWN}
+		\item Master Switch - \textbf{OFF}
+		\item Touchdown - \textbf{TAIL LOW}
+		\item Brakes - \textbf{HARD BRAKING}
+	
+	\end{enumerate*}
+	
+	
+	
+	
+\subsection{Precautionary Landings With Power}
+
+	\begin{enumerate*}
+	
+		\item Airspeed - \textbf{BEST GLIDE - 80 MPH}
+		\item Flaps - \textbf{25$^\circ$}
+		\item Selecting a Field - \textbf{FLY OVER TO NOTE TERRAIN AND OBSTRUCTIONS}
+		\item Electrical - \textbf{OFF}
+		\item Flaps - \textbf{40$^\circ$ - ON FINAL}
+		\item Airspeed - \textbf{76 MPH}
+	
+	\end{enumerate*}
+
+
+% horizontal line
+\rule{0.5\linewidth}{0.25pt}
+\scriptsize
+
+Written by Pete Mills - 2013.10.19\\
+Typeset with \LaTeX\ 
+
+For use with N56591 - No other aircraft apply\\
+The POH for PA28-140 is master.
+
+
+\end{multicols}
+\end{document}
