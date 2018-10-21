@@ -1,0 +1,297 @@
+% By Rob Glossop. Modified from Pete Mills' checklist here:
+% http://petemills.blogspot.com/2013/09/latex-airplane-checklist.html
+\documentclass[8pt]{article}
+\usepackage{multicol}
+\usepackage{multienum}
+\usepackage{comment}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{extsizes}
+
+\usepackage[scaled]{helvet}
+\renewcommand\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+
+\geometry{letterpaper,paperwidth=6in,paperheight=9in,top=.5in,left=.5in,right=.5in,bottom=.5in}
+
+
+% Turn off header and footer
+\pagestyle{empty}
+
+\singlespacing
+
+% Redefine section commands to use less space
+\makeatletter
+\renewcommand{\section}{\@startsection{section}{1}{0mm}%
+                                {-1ex plus -.5ex minus -.2ex}%
+                                {0.5ex plus .2ex}%x
+                                {\normalfont\large\bfseries}}
+\renewcommand{\subsection}{\@startsection{subsection}{2}{0mm}%
+                                {-1explus -.5ex minus -.2ex}%
+                                {0.5ex plus .2ex}%
+                                {\normalfont\normalsize\bfseries}}
+\renewcommand{\subsubsection}{\@startsection{subsubsection}{3}{0mm}%
+                                {-1ex plus -.5ex minus -.2ex}%
+                                {1ex plus .2ex}%
+                                {\normalfont\small\bfseries}}
+\makeatother
+
+
+% Don't print section numbers
+\setcounter{secnumdepth}{0}
+
+\newenvironment{checklist}%
+               {\begin{enumerate}%
+                   \setlength{\itemsep}{0pt}%
+                   \setlength{\parskip}{0pt}}%
+               {\end{enumerate}}
+
+\newenvironment{itemize*}%
+               {\begin{itemize}%
+                   \setlength{\itemsep}{0pt}%
+                   \setlength{\parskip}{0pt}}%
+               {\end{itemize}}
+
+
+
+% -----------------------------------------------------------------------
+
+\begin{document}
+
+\raggedright
+
+% Title
+
+\begin{center}
+     \Large{\textbf{PA28-181 Checklist}} \\
+%     \Large{\textbf{N6969A}}\\
+\end{center}
+
+\begin{multicols}{3}
+
+% multicol parameters
+% These lengths are set only within the two main columns
+%\setlength{\columnseprule}{0.25pt}
+\setlength{\premulticols}{1pt}
+\setlength{\postmulticols}{1pt}
+\setlength{\multicolsep}{1pt}
+\setlength{\columnsep}{1pt}
+\setlength{\itemsep}{0em}
+
+
+% -----------------------------------------------------------------------
+
+
+\subsection{Before Start}
+\begin{checklist}
+
+\item Belts on
+\item Brakes set
+\item Check circuit breakers
+\item Alternate static source off
+\item Carb heat cold
+\item Avionics off
+\item Fuel selector set
+
+\end{checklist}
+
+
+\subsection{Starting Engine - Normal}
+\begin{checklist}
+  
+\item Throttle 1/4''
+\item Bat, Alt on
+\item Lights on
+\item Left mag on
+\item Fuel pump on
+\item Mix rich
+\item Prop clear
+\item Start
+\item Right mag on
+\item Oil pressure check
+  
+\end{checklist}
+
+
+\subsection{Before Taxi}
+\begin{checklist}
+
+\item Lean out
+\item ATIS
+\item Brake check
+\item Gyros check
+
+\end{checklist}
+
+
+\subsection{Run-Up}
+\begin{checklist}
+
+\item Brakes set
+\item Flight controls free \& correct
+\item Switch tank
+\item Throttle to 2000rpm
+\item Mag check - 175 max, 50 diff
+\item Carb heat check
+\item Fuel pump off, check, on
+\item Vacuum 4.8 to 5.2 in. Hg.
+\item Oil temp, pressure
+\item AC check
+\item Ammeter check
+\item Annunciators check, test
+\item Throttle idle, 1000rpm
+
+\end{checklist}
+
+
+\subsection{Before Takeoff}
+\begin{checklist}
+  
+\item Flight instruments check, set
+\item Lights set
+\item Fuel selector correct
+\item Fuel pump on
+\item Seats, belts set
+\item Flaps set
+\item Trim set
+\item AC off
+  
+\end{checklist}
+
+\columnbreak
+
+% begin new section
+\subsection{Speeds}
+
+\begin{itemize*}
+\item $V_{x}$: 64kts
+\item $V_y$: 76kts
+\item $V_{glide}$: 76kts
+\item $V_a$: 89 to 113kts
+\item final: 66kts
+\item Cruise climb: 87kts
+\end{itemize*}
+
+	
+\subsection{Cruise}
+\begin{checklist}
+  
+\item Fuel pump off
+\item Lean out
+\item Lights set
+\item Switch tanks every 15min, fuel pump when switching
+  
+\end{checklist}
+
+
+\subsection{Landing}
+\begin{checklist}
+  
+\item Fuel selector to fullest
+\item Belts
+\item Fuel pump on
+\item Carb heat as req'd
+
+\end{checklist}
+	
+	
+\subsection{After Landing}
+\begin{checklist}
+	
+\item Flaps up
+\item Lean out
+\item Lights
+	
+\end{checklist}
+	
+	
+\subsection{Shutdown}
+\begin{checklist}
+
+\item Flaps up
+\item Fuel pump off
+\item Radios off
+\item Mix to cut-off
+\item Mags off
+\item Master, electricals off
+\item Control lock on
+  
+\end{checklist}
+	
+	
+\section{EMERGENCY PROCEDURES}
+
+\subsection{Engine fire on start}
+\begin{checklist}
+\item Keep cranking
+\item Mix to cut-off
+\item Throttle open
+\item Fuel pump off
+\item Fuel selector off
+\end{checklist}
+\subsection{Engine Failure During Takeoff}
+
+\begin{checklist}
+  
+\item Airspeed - \textbf{BEST GLIDE: 80 MPH}
+\item Fuel Selector Valve - \textbf{OFF}
+\item Fuel Pump - \textbf{OFF}
+\item Mixture - \textbf{IDLE CUTOFF}
+  
+\end{checklist}
+
+
+
+
+\subsection{Engine Failure During Flight}
+
+\begin{checklist}
+  
+\item Airspeed - \textbf{BEST GLIDE - 80 MPH}
+\item Fuel Selector - \textbf{SWITCH TANKS}
+\item Magnetos - \textbf{BOTH}
+\item Fuel Pump - \textbf{ON}
+\item Carburetor Heat - \textbf{ON}
+\item Mixture - \textbf{FULL RICH}
+\item Thrittle - {FULL THROTTLE}
+\item Engine Gauges - \textbf{CHECK}
+  
+\end{checklist}
+
+
+
+\subsection{Forced Landings Without Engine Power}
+
+\begin{checklist}
+  
+\item Airspeed - \textbf{BEST GLIDE - 80 MPH}
+\item Mixture - \textbf{IDLE CUTOFF}
+\item Fuel Selector - \textbf{OFF}
+\item Magnetos - \textbf{OFF}
+\item Flaps - \textbf{AS REQUIRED}
+\item Doors - \textbf{OPEN BEFORE TOUCHDOWN}
+\item Master Switch - \textbf{OFF}
+\item Touchdown - \textbf{TAIL LOW}
+\item Brakes - \textbf{HARD BRAKING}
+  
+\end{checklist}
+
+
+
+
+\subsection{Precautionary Landings With Power}
+
+\begin{checklist}
+  
+\item Airspeed - \textbf{BEST GLIDE - 80 MPH}
+\item Flaps - \textbf{25$^\circ$}
+\item Selecting a Field - \textbf{FLY OVER TO NOTE TERRAIN AND OBSTRUCTIONS}
+\item Electrical - \textbf{OFF}
+\item Flaps - \textbf{40$^\circ$ - ON FINAL}
+\item Airspeed - \textbf{76 MPH}
+  
+\end{checklist}
+
+
+\end{multicols}
+\end{document}

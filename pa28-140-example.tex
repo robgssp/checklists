@@ -11,7 +11,7 @@
 \renewcommand\familydefault{\sfdefault}
 \usepackage[T1]{fontenc}
 
-\geometry{letterpaper,paperwidth=5in,paperheight=8in,top=.5in,left=.5in,right=.5in,bottom=.5in}
+\geometry{letterpaper,paperwidth=6in,paperheight=9in,top=.5in,left=.5in,right=.5in,bottom=.5in}
 
 
 % Turn off header and footer
@@ -19,7 +19,6 @@
 
 \singlespacing
  
-
 % Redefine section commands to use less space
 \makeatletter
 \renewcommand{\section}{\@startsection{section}{1}{0mm}%
@@ -53,8 +52,15 @@
 \begin{document}
 
 \raggedright
-\footnotesize
-\begin{multicols}{2}
+
+% Title
+
+\begin{center}
+     \Large{\textbf{PA28-140 Checklist}} \\
+     \Large{\textbf{N56591}}\\
+\end{center}
+
+\begin{multicols}{3}
 
 
 % multicol parameters
@@ -63,19 +69,12 @@
 \setlength{\premulticols}{1pt}
 \setlength{\postmulticols}{1pt}
 \setlength{\multicolsep}{1pt}
-\setlength{\columnsep}{2pt}
+\setlength{\columnsep}{1pt}
 \setlength{\itemsep}{0em}
 
 
 % -----------------------------------------------------------------------
 
-% Page title
-\begin{center}
-     \Large{\textbf{PA28-140 Checklist}} \\
-     \Large{\textbf{N56591}}\\
-\end{center}
-
-\newlength{\len}
 
 % begin new section
 \subsection{V - Speeds in Miles Per Hour ( MPH )}
