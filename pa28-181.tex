@@ -3,6 +3,7 @@
 \documentclass[8pt]{article}
 \usepackage{multicol}
 \usepackage{multienum}
+\usepackage{enumitem}
 \usepackage{comment}
 \usepackage{geometry}
 \usepackage{setspace}
@@ -41,13 +42,13 @@
 \setcounter{secnumdepth}{0}
 
 \newenvironment{checklist}%
-               {\begin{enumerate}%
+               {\begin{enumerate}[leftmargin=0.2in]%
                    \setlength{\itemsep}{0pt}%
                    \setlength{\parskip}{0pt}}%
                {\end{enumerate}}
 
 \newenvironment{itemize*}%
-               {\begin{itemize}%
+               {\begin{itemize}[leftmargin=0.2in]%
                    \setlength{\itemsep}{0pt}%
                    \setlength{\parskip}{0pt}}%
                {\end{itemize}}
@@ -96,9 +97,9 @@
 \end{checklist}
 
 
-\subsection{Starting Engine - Normal}
+\subsection{Starting Engine}
 \begin{checklist}
-  
+
 \item Throttle 1/4''
 \item Bat, Alt on
 \item Lights on
@@ -109,7 +110,7 @@
 \item Start
 \item Right mag on
 \item Oil pressure check
-  
+
 \end{checklist}
 
 
@@ -129,7 +130,7 @@
 
 \item Brakes set
 \item Flight controls free \& correct
-\item Switch tank
+\item Switch tanks
 \item Throttle to 2000rpm
 \item Mag check - 175 max, 50 diff
 \item Carb heat check
@@ -146,7 +147,7 @@
 
 \subsection{Before Takeoff}
 \begin{checklist}
-  
+
 \item Flight instruments check, set
 \item Lights set
 \item Fuel selector correct
@@ -155,7 +156,7 @@
 \item Flaps set
 \item Trim set
 \item AC off
-  
+
 \end{checklist}
 
 \columnbreak
@@ -172,39 +173,39 @@
 \item Cruise climb: 87kts
 \end{itemize*}
 
-	
+
 \subsection{Cruise}
 \begin{checklist}
-  
+
 \item Fuel pump off
 \item Lean out
 \item Lights set
 \item Switch tanks every 15min, fuel pump when switching
-  
+
 \end{checklist}
 
 
 \subsection{Landing}
 \begin{checklist}
-  
+
 \item Fuel selector to fullest
 \item Belts
 \item Fuel pump on
 \item Carb heat as req'd
 
 \end{checklist}
-	
-	
+
+
 \subsection{After Landing}
 \begin{checklist}
-	
+
 \item Flaps up
 \item Lean out
 \item Lights
-	
+
 \end{checklist}
-	
-	
+
+
 \subsection{Shutdown}
 \begin{checklist}
 
@@ -215,13 +216,13 @@
 \item Mags off
 \item Master, electricals off
 \item Control lock on
-  
+
 \end{checklist}
-	
-	
+
+
 \section{EMERGENCY PROCEDURES}
 
-\subsection{Engine fire on start}
+\subsection{Engine Fire On Start}
 \begin{checklist}
 \item Keep cranking
 \item Mix to cut-off
@@ -229,69 +230,102 @@
 \item Fuel pump off
 \item Fuel selector off
 \end{checklist}
-\subsection{Engine Failure During Takeoff}
 
+\subsection{Engine Failure On Takeoff}
 \begin{checklist}
-  
-\item Airspeed - \textbf{BEST GLIDE: 80 MPH}
-\item Fuel Selector Valve - \textbf{OFF}
-\item Fuel Pump - \textbf{OFF}
-\item Mixture - \textbf{IDLE CUTOFF}
-  
+
+\item Fuel selector switch
+\item Fuel pump on
+\item Mix rich
+\item Carb heat on
+
 \end{checklist}
 
 
-
-
-\subsection{Engine Failure During Flight}
-
+\subsection{Engine Failure In Flight}
 \begin{checklist}
-  
-\item Airspeed - \textbf{BEST GLIDE - 80 MPH}
-\item Fuel Selector - \textbf{SWITCH TANKS}
-\item Magnetos - \textbf{BOTH}
-\item Fuel Pump - \textbf{ON}
-\item Carburetor Heat - \textbf{ON}
-\item Mixture - \textbf{FULL RICH}
-\item Thrittle - {FULL THROTTLE}
-\item Engine Gauges - \textbf{CHECK}
-  
+
+\item Airspeed $\geq$76kias
+\item Fuel selector switch
+\item Fuel pump on
+\item Mix rich
+\item Carb heat on
+\item Check gauges for issue
+
+  If power is restored:
+
+\item Carb heat off
+\item Fuel pump off
 \end{checklist}
 
 
-
-\subsection{Forced Landings Without Engine Power}
-
+\subsection{Power Off Landing}
 \begin{checklist}
-  
-\item Airspeed - \textbf{BEST GLIDE - 80 MPH}
-\item Mixture - \textbf{IDLE CUTOFF}
-\item Fuel Selector - \textbf{OFF}
-\item Magnetos - \textbf{OFF}
-\item Flaps - \textbf{AS REQUIRED}
-\item Doors - \textbf{OPEN BEFORE TOUCHDOWN}
-\item Master Switch - \textbf{OFF}
-\item Touchdown - \textbf{TAIL LOW}
-\item Brakes - \textbf{HARD BRAKING}
-  
+
+\item Flaps as desired
+\item Throttle closed
+\item Mix cutoff
+\item Mags off
+\item Master off
+\item Fuel selector off
+\item Seatbelts tight
+
 \end{checklist}
 
 
-
-
-\subsection{Precautionary Landings With Power}
-
+\subsection{Electrical Fire In Flight}
 \begin{checklist}
-  
-\item Airspeed - \textbf{BEST GLIDE - 80 MPH}
-\item Flaps - \textbf{25$^\circ$}
-\item Selecting a Field - \textbf{FLY OVER TO NOTE TERRAIN AND OBSTRUCTIONS}
-\item Electrical - \textbf{OFF}
-\item Flaps - \textbf{40$^\circ$ - ON FINAL}
-\item Airspeed - \textbf{76 MPH}
-  
+
+\item Batt, Alternator off
+\item Vents open
+\item Cabin heat off
+\item Land as soon as possible
+
 \end{checklist}
 
+
+\subsection{Engine Fire In Flight}
+\begin{checklist}
+
+\item Fuel selector off
+\item Throttle closed
+\item Mix cutoff
+\item Fuel pump off
+\item Heater, defroster off
+\item Make power-off landing
+
+\end{checklist}
+
+
+\subsection{Electrical Failures}
+\begin{checklist}
+
+\item If alt annunciator, check ammeter
+\item If ammeter is zero, Alt off
+\item Reduce electrical load
+\item Check Alt circuit breaker
+\item Alt switch on
+\item Alt switch off if not fixed
+
+\end{checklist}
+
+\subsection{Electrical Overload (+20A On Ammeter)}
+\begin{checklist}
+
+\item Alt switch on
+\item Bat switch off
+
+  if load is reduced:
+
+\item reduce electrical load
+
+  if load isn't reduced:
+
+\item Alt switch off
+\item Bat switch as req'd
+\item Land as soon as possible
+
+\end{checklist}
 
 \end{multicols}
 \end{document}
